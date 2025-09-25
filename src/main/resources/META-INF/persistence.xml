@@ -9,6 +9,7 @@
         <class>annie470.entities.Partecipazione</class>
         <class>annie470.entities.PartitaCalcio</class>
         <class>annie470.entities.GaraAtletica</class>
+        <class>annie470.entities.Concerto</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/dbEventi"/>

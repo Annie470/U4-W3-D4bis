@@ -51,9 +51,19 @@ public class Application {
         atleti.add(pf);
         atleti.add(pf2);
 
-        GaraAtletica g1 = new GaraAtletica( "Gara atleti 2025", LocalDate.of(2025,4,10), "Gara staffetta", TipoEvento.PUBBLICO, 3000, lf, atleti, pf2);
+        GaraAtletica g1 = new GaraAtletica("Gara atleti 2025", LocalDate.of(2025,4,10), "Gara staffetta", TipoEvento.PUBBLICO, 3000, lf, atleti, pf2);
 
-        evd.save(g1);*/
+        evd.save(g1);
+
+        Concerto c1 = new Concerto("HardcorePunkFest", LocalDate.of(2026,10,10), "Concerto punk all'aperto", TipoEvento.PUBBLICO, 2000, lf, Genere.ROCK, false);
+        Concerto c2 = new Concerto("Classica 900", LocalDate.of(2028,7,10), "Concerto musica classica", TipoEvento.PUBBLICO, 800, lf, Genere.CLASSIC, true);
+        Concerto c3 = new Concerto("Concerto QOSA", LocalDate.of(2028,1,10), "Concerto QueensOfStoneAge", TipoEvento.PUBBLICO, 40000, lf, Genere.ROCK, true);
+
+        evd.save(c1);
+        evd.save(c2);
+        evd.save(c3);*/
+
+        evd.getConcertiInStreaming(em);
 
         System.out.println("TUTTO OK");
     }
